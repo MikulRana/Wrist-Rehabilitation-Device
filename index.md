@@ -44,7 +44,7 @@ For your second milestone, explain what you've worked on since your previous mil
 <p>Another problem was that the angle values read -35 degrees when the wrist was straight, instead of 0 degrees. I discovered the resistance value I defined for the resistor in my circuit was incorrect. After researching the resistor's possible resistance range and using a multimeter, I determined the exact value. I also used the color-coded bands on the resistor to confirm the precise resistance</p>
 <p>The next step for me is to wire up the remaining components like the accelerometer, gyroscope, and buzzer. I will also try to connect the Bluetooth module and send sensor data to the computer through that. </p>
 
-<p>This is my code that I have completed so far. So far it calculates the angle of the flex sensor, while also setting a limit to the angle:</p>
+<p>Below is my code that I have completed so far. So far it calculates the angle of the flex sensor, while also setting a limit to the angle:</p>
 ```c++
 const int FLEX_PIN = A0; // Pin connected to voltage divider output
 
@@ -125,7 +125,7 @@ One of the best parts about Github is that you can view how other people set up 
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 -->
-<p>This is what is displayed in the serial monitor in Arduino IDE from the above code. When the degree values become greater than or equal to 15, then the code displays "BAD", but later this will translate to a beep</p>
+<p>Below is what is displayed in the serial monitor in Arduino IDE from the above code. When the degree values become greater than or equal to 15, then the code displays "BAD", but later this will translate to a beep</p>
 ![Headstone Image](datasc.png)
 # Starter Project - Calculator
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wXEsTbNK6yc?si=MvtolE11zvuNi826" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
