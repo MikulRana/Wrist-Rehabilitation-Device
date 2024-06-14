@@ -1,7 +1,7 @@
-# Project Name Here
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
+# Wrist Rehabilitation Device
+My Wrist Rehabilitation Device uses sensors to monitor the angle of the wrist and beeps when the wrist bends too far. It uses an arduino, a gyroscope and accelerometer, and a flex sensor. It has a bluetooth module which allows it to transmit data to the user's computer without the arduino being plugged in. This could be used to prevent and help with carpal tunnel syndrome, or other wrist pains caused by bad posture. 
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
+
 ```HTML 
 <!--- This is an HTML comment in Markdown -->
 <!--- Anything between these symbols will not render on the published site -->
@@ -9,13 +9,11 @@ You should comment out all portions of your portfolio that you have not complete
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| FirstName LastInitialOnly | School Name | Electrical Engineering | Incoming Senior
+| Mikul R | Saratoga High School | Mechanical Engineering & Business | Incoming Sophomore
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
-
-![Headstone Image](logo.svg)
+![Headstone Image](headshot.jpg)
   
-# Final Milestone
+<!--# Final Milestone
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
@@ -40,37 +38,80 @@ For your second milestone, explain what you've worked on since your previous mil
 - What has been surprising about the project so far
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone 
-
+-->
 # First Milestone
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4qdVO-jCbHY?si=K4MMR2H-8GmGsBDG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>My first step forward was to work on the flex sensor portion of my schematic as well as coding the flex sensor to print out its values and figure out when the angle is a bad angle. The ideal wrist angle is 20 degrees or less, but since the flex sensor has some variability, I set the limit to 18 degrees. This was challenging because a flex sensor is actually a resistor, so the output of the sensor is a resistance value. Because of this, there had to be an algorithm which converts the resistance recorded to an angle.</p>
+![Headstone Image](FlexSensorSchematic.png)
+<p>One challenge I faced was not seeing values in the output tab. Initially, I thought there was an issue with my code and referenced online sources, but my code appeared correct. I then realized I needed to open the Serial Monitor in Arduino IDE, as the output tab is for code outputs, while the Serial Monitor displays data transmitted from the Arduino.
+</p>
+<p>Another problem was that the angle values read -35 degrees when the wrist was straight, instead of 0 degrees. I discovered the resistance value I defined for the resistor in my circuit was incorrect. After researching the resistor's possible resistance range and using a multimeter, I determined the exact value. I also used the color-coded bands on the resistor to confirm the precise resistance</p>
+<p>The next step for me is to wire up the remaining components like the accelerometer, gyroscope, and buzzer. I will also try to connect the Bluetooth module and send sensor data to the computer through that. </p>
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<p>This is my code that I have completed so far. So far it calculates the angle of the flex sensor, while also setting a limit to the angle:</p>
+```c++
+const int FLEX_PIN = A0; // Pin connected to voltage divider output
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+const float VCC = 4.98; // Measured voltage of Ardunio 5V line
+const float R_DIV = 10000.0; // Measured resistance of resistor
+const float STRAIGHT_RESISTANCE = 15000.0; // resistance when straight
+const float BEND_RESISTANCE = 70000.0; // resistance at 90 deg
+void setup() {
+  Serial.begin(9600);
+  pinMode(FLEX_PIN, INPUT);
+}
+void loop() {
+  // Read the ADC, and calculate voltage and resistance from it
+  int flexADC = analogRead(FLEX_PIN);
+  float flexV = flexADC * VCC / 1023.0;
+  float flexR = R_DIV * (VCC / flexV - 1.0);
+  // Use the calculated resistance to estimate the sensor's bend angle:
+  float angle = map(flexR, STRAIGHT_RESISTANCE, BEND_RESISTANCE,
+                   0, 90.0);
+  Serial.println("Bend: " + (String(angle)) + " degrees");
+  Serial.println();
+  if ((angle) > 15) {
+    Serial.println("BAD");
+  }
+  delay(1000);
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
-
-# Schematics 
+}
+```
+<!--# Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```c++
-void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
-  Serial.println("Hello World!");
-}
+const int FLEX_PIN = A0; // Pin connected to voltage divider output
 
+const float VCC = 4.98; // Measured voltage of Ardunio 5V line
+const float R_DIV = 10000.0; // Measured resistance of resistor
+const float STRAIGHT_RESISTANCE = 15000.0; // resistance when straight
+const float BEND_RESISTANCE = 70000.0; // resistance at 90 deg
+void setup() {
+  Serial.begin(9600);
+  pinMode(FLEX_PIN, INPUT);
+}
 void loop() {
-  // put your main code here, to run repeatedly:
+  // Read the ADC, and calculate voltage and resistance from it
+  int flexADC = analogRead(FLEX_PIN);
+  float flexV = flexADC * VCC / 1023.0;
+  float flexR = R_DIV * (VCC / flexV - 1.0);
+  // Use the calculated resistance to estimate the sensor's bend angle:
+  float angle = map(flexR, STRAIGHT_RESISTANCE, BEND_RESISTANCE,
+                   0, 90.0);
+  Serial.println("Bend: " + (String(angle)) + " degrees");
+  Serial.println();
+  if ((angle) > 15) {
+    Serial.println("BAD");
+  }
+  delay(1000);
 
 }
 ```
+
 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
@@ -87,5 +128,9 @@ One of the best parts about Github is that you can view how other people set up 
 - [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
+-->
 
-To watch the BSE tutorial on how to create a portfolio, click here.
+# Starter Project - Calculator
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wXEsTbNK6yc?si=MvtolE11zvuNi826" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>My starter project was the calculator, and I chose this project because it seemed like a fun project and it required a lot of soldering which I wanted to practice. The calculator has 17 buttons with 4 functions: 1) addition, 2) subtraction, 3) multiplication, and 4) division. Another button on the calculator, the On/Clear button, turns on the calculator, and while the calculator is on, if pressed again, the numbers displayed on the LED (Light Emitting Diode) display are cleared. All these buttons are soldered down along with a 7 segment 6 digit LED digital display tube. Each digit is formed by 7 different LED segments, which individually light up and turn off to display different numbers. The component near the top of the calculator is an Integrated Circuit which has an Arithmetic Logic Unit (ALU), a digital circuit used to perform arithmetic and logic operations.</p>
+<p>One challenge I faced was that the LED display only was showing 2 and wasn't allowing me to press any other buttons. After debugging, I found out that the button was stuck on the frame, and after I release it, the calculator worked perfectly. From this project, I improved my soldering skills while also learning how to debug properly. I will apply everything I learned so far on my main project, the Wrist Rehabilitation Monitor.</p>
