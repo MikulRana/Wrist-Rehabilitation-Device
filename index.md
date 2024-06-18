@@ -120,14 +120,14 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-
+<!--
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
 - [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 
-
+-->
 # Starter Project - Calculator
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wXEsTbNK6yc?si=MvtolE11zvuNi826" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <p>My starter project was the calculator, and I chose this project because it seemed like a fun project and it required a lot of soldering which I wanted to practice. The calculator has 17 buttons with 4 functions: 1) addition, 2) subtraction, 3) multiplication, and 4) division. Another button on the calculator, the On/Clear button, turns on the calculator, and while the calculator is on, if pressed again, the numbers displayed on the LED (Light Emitting Diode) display are cleared. All these buttons are soldered down along with a 7 segment 6 digit LED digital display tube. Each digit is formed by 7 different LED segments, which individually light up and turn off to display different numbers. The component near the top of the calculator is an Integrated Circuit which has an Arithmetic Logic Unit (ALU), a digital circuit used to perform arithmetic and logic operations.</p>
