@@ -25,8 +25,9 @@ For your final milestone, explain the outcome of your project. Key details to in
 <div style="text-align: center;">
   <h1>Second Milestone</h1>
 </div>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div style="text-align: center;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer;       autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 <div style="text-align: center;">
   <h3>Milestone 2 Schematic</h3>
 </div>
@@ -48,9 +49,12 @@ For your final milestone, explain the outcome of your project. Key details to in
 </div>
 <p>The next steps of my project are to solder the components onto a pcb board instead of the breadboard so it could be put on the wrist sleeve, and connect everything to the wrist sleeve. After everything, I will test and debug to make sure my project is finished successfully. </p>
 
-
-# First Milestone
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4qdVO-jCbHY?si=K4MMR2H-8GmGsBDG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style="text-align: center;">
+  <h1>First Milestone</h1>
+</div>
+<div style="text-align: center;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/4qdVO-jCbHY?si=K4MMR2H-8GmGsBDG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 <p>My first step forward was to work on the flex sensor portion of my schematic as well as coding the flex sensor to print out its values and figure out when the angle is a bad angle. The ideal wrist angle is 20 degrees or less, but since the flex sensor has some variability, I set the limit to 18 degrees. This was challenging because a flex sensor is actually a resistor, so the output of the sensor is a resistance value. Because of this, there had to be an algorithm which converts the resistance recorded to an angle.</p>
 ![Headstone Image](FlexSensorSchematic.png)
 <p>One challenge I faced was not seeing values in the output tab. Initially, I thought there was an issue with my code and referenced online sources, but my code appeared correct. I then realized I needed to open the Serial Monitor in Arduino IDE, as the output tab is for code outputs, while the Serial Monitor displays data transmitted from the Arduino.
