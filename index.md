@@ -28,7 +28,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Milestone 2 Schematic
-![Headstone Image](Milestone2Schematic.png)
+<img src="Milestone2Schematic.png" alt="Schematic" width="300">
 
 <p>I first added the LSM6DS3 + LIS3MDL module to my circuit, which includes a gyroscope, accelerometer, and magnetometer. Out of these 3 sensors, I had to determine which one of those would best be suited for the purpose of my wrist device. I originally thought the gyroscope would be the best to use, but as I printed the values, I realized the accelerometer values were the ones changing as I turned the module, so I decided to use those. The accelerometer measures the acceleration of the module as the name suggests while the gyroscope measures the rate of rotation, or angular velocity, of an object. Since the movement is relatively slow, the measured angular velocity might have been below the sensitivity threshold of the gyroscope, causing it to report small values which weren’t very helpful. The accelerometer was able to quantify the movement of the module to bigger numbers which would help more in this context. 
 </p>
@@ -38,7 +38,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 </p>
 <p>One challenge I faced was with the bluetooth module where it wasn’t connecting to my computer and the arduino. I realized in my settings, I had to turn on advanced bluetooth search so that the HC-05 module showed up because the default mode only displays common devices like headphones, printers, etc. 
 </p>
-<p>Another challenge was connecting the accelerometer module to the breadboard because the breadboard pins it came with weren’t conducting the power well and the gyroscope wasn’t consistently on. To fix this, I had to put the wires through the module itself into the breadboard.
+<p>Another challenge was connecting the accelerometer module to the breadboard because the breadboard pins it came with weren’t conducting the power well and the gyroscope wasn’t consistently on. To fix this, I tried to put the wires through the module itself into the breadboard, but even that didn't work. I concluded that there was probably a faulty connection within the breadboard, so I put the module on its own with the jumper wires touching the through  
 </p>
 <p>The next steps of my project are to solder the components onto a pcb board instead of the breadboard so it could be put on the wrist sleeve, and connect everything to the wrist sleeve. After everything, I will test and debug to make sure my project is finished successfully. </p>
 
