@@ -69,7 +69,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 		Gyro -0.2957 	 -0.8015 	 0.1356 	radians/s 
 
 ```
-
+<p>Above we can see that none of the values have noticable differences</p>
 <p>  I also added a piezo buzzer. Piezo buzzers work by applying an alternating voltage to a piezoelectric ceramic material, which causes the material to vibrate rapidly and produce sound waves. A piezo buzzer needs a resistor to reset the voltage when the switch is open, which is why I added a 100 ohm resistor to the circuit. 
 </p>
 
