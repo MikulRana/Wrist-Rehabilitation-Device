@@ -57,6 +57,18 @@ For your final milestone, explain the outcome of your project. Key details to in
 		Accel -1.7420 	 0.5073 	 10.2233 	m/s^2 
 
 ```
+```c++
+			x	  y		  z
+		Gyro 0.0269 	 -0.0061 	 -0.0037 	radians/s 
+		Gyro 0.1222 	 0.0648 	 0.0208 	radians/s 
+		Gyro -0.1100 	 0.0696 	 -0.0977 	radians/s 
+		Gyro 0.1356 	 0.2443 	 0.0269 	radians/s 
+		Gyro 0.0660 	 0.0159 	 0.0428 	radians/s 
+		Gyro -0.0220 	 0.0220 	 0.0342 	radians/s 
+		Gyro 0.0281 	 -0.0269 	 0.0110 	radians/s 
+		Gyro -0.2957 	 -0.8015 	 0.1356 	radians/s 
+
+```
 
 <p>  I also added a piezo buzzer. Piezo buzzers work by applying an alternating voltage to a piezoelectric ceramic material, which causes the material to vibrate rapidly and produce sound waves. A piezo buzzer needs a resistor to reset the voltage when the switch is open, which is why I added a 100 ohm resistor to the circuit. 
 </p>
