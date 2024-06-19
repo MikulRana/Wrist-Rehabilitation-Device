@@ -1,14 +1,14 @@
 <div style="text-align: center;">
   <h1>Wrist Rehabilitation Device</h1>
 </div>
-My Wrist Rehabilitation Device uses sensors to monitor the angle of the wrist and beeps when the wrist bends too far. It uses an arduino, a gyroscope and accelerometer, and a flex sensor. It has a bluetooth module which allows it to transmit data to the user's computer without the arduino being plugged in. This could be used to prevent and help with carpal tunnel syndrome, or other wrist pains caused by bad posture. 
+My Wrist Rehabilitation Device uses sensors to monitor the angle of the wrist and beeps when the wrist bends too far. It uses an arduino, a gyroscope and accelerometer, and a flex sensor. It has a Bluetooth module which allows it to transmit data to the user's computer without the arduino being plugged in. This could be used to prevent and help with carpal tunnel syndrome, or other wrist pains caused by bad posture. 
 
 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Mikul R | Saratoga High School | Mechanical Engineering | Incoming Sophomore |
-
+<p> </p>
 <div style="text-align: center;">
   <img src="headshot.jpg" alt="me!" width="600">
 </div>
@@ -43,12 +43,12 @@ For your final milestone, explain the outcome of your project. Key details to in
 <p>  I also added a piezo buzzer. Piezo buzzers work by applying an alternating voltage to a piezoelectric ceramic material, which causes the material to vibrate rapidly and produce sound waves. A piezo buzzer needs a resistor to reset the voltage when the switch is open, which is why I added a 100 ohm resistor to the circuit. 
 </p>
 
-<p>  The bluetooth module is called the HC-05, and I was using it to wirelessly transmit data from the arduino to my computer. 2 of the pins on the module, the RX and TX, are the serial communication pins. These have to be connected to the opposite pin on the arduino, so the RX has to go to the TX port and the TX has to go to the RX port. This is because the labels refer to the device itself, not the other device it's connected to.
+<p>  The Bluetooth module is called the HC-05, and I was using it to wirelessly transmit data from the arduino to my computer. 2 of the pins on the module, the RX and TX, are the serial communication pins. These have to be connected to the opposite pin on the arduino, so the RX has to go to the TX port and the TX has to go to the RX port. This is because the labels refer to the device itself, not the other device it's connected to.
 </p>
 <div style="text-align: center;">
   <img src="bluetooth.jpg" alt="Bluetooth Module" width="500">
 </div>
-<p>  One challenge I faced was with the bluetooth module where it wasn’t connecting to my computer and the arduino. I realized in my settings, I had to turn on advanced bluetooth search so that the HC-05 module showed up because the default mode only displays common devices like headphones, printers, etc. 
+<p>  One challenge I faced was with the Bluetooth module where it wasn’t connecting to my computer and the arduino. I realized in my settings, I had to turn on advanced Bluetooth search so that the HC-05 module showed up because the default mode only displays common devices like headphones, printers, etc. 
 </p>
 <p>  Another challenge was connecting the accelerometer module to the breadboard because the breadboard pins it came with weren’t conducting the power well and the gyroscope wasn’t consistently on. To fix this, I tried to put the wires through the module itself into the breadboard, but even that didn't work. I concluded that there was probably a faulty connection within the breadboard, so I put the module on its own with the jumper wires touching the through  
 </p>
