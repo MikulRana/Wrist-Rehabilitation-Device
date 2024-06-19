@@ -32,7 +32,7 @@ For your final milestone, explain the outcome of your project. Key details to in
   <h1>Second Milestone</h1>
 </div>
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer;       autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/uWUC-9JCDNA?si=ks31A9qE4YFSu6tZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 <div style="text-align: center;">
   <h3>Milestone 2 Schematic</h3>
