@@ -27,7 +27,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <div style="text-align: center;">
-  # Milestone 2 Schematic
+  <h3># Milestone 2 Schematic</h3>
 </div>
 <div style="text-align: center;">
   <img src="Milestone2Schematic.png" alt="Schematic" width="300">
