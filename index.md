@@ -10,7 +10,7 @@ My Wrist Rehabilitation Device uses sensors to monitor the angle of the wrist an
 | Mikul R | Saratoga High School | Mechanical Engineering | Incoming Sophomore |
 
 <div style="text-align: center;">
-  <img src="headshot.jpg" alt="me!" width="800">
+  <img src="headshot.jpg" alt="me!" width="600">
 </div>
   
 <!--# Final Milestone
