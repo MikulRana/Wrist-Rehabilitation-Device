@@ -38,7 +38,7 @@ For your final milestone, explain the outcome of your project. Key details to in
   <h3>Milestone 2 Schematic</h3>
 </div>
 <div style="text-align: center;">
-  <img src="Milestone 2 Schematic.png" alt="Schematic" width="300">
+  <img src="Milestone 2 Schematic.png" alt="Schematic" width="600">
 </div>
 <p>  I first added the LSM6DS3 + LIS3MDL module to my circuit, which includes a gyroscope, accelerometer, and magnetometer. Out of these 3 sensors, I had to determine which one of those would best be suited for the purpose of my wrist device. I originally thought the gyroscope would be the best to use, but as I printed the values, I realized the accelerometer values were the ones changing as I turned the module, so I decided to use those. The accelerometer measures the acceleration of the module as the name suggests while the gyroscope measures the rate of rotation, or angular velocity, of an object. Since the movement is relatively slow, the measured angular velocity might have been below the sensitivity threshold of the gyroscope, causing it to report small values which weren’t very helpful. The accelerometer was able to quantify the movement of the module to bigger numbers which would help more in this context. 
 </p>
