@@ -40,27 +40,22 @@ For your final milestone, explain the outcome of your project. Key details to in
 <div style="text-align: center;">
   <img src="Milestone 2 Schematic.png" alt="Schematic" width="600">
 </div>
-<p>  I first added the LSM6DS3 + LIS3MDL module to my circuit, which includes a gyroscope, accelerometer, and magnetometer. Out of these 3 sensors, I had to determine which one of those would best be suited for the purpose of my wrist device. I originally thought the gyroscope would be the best to use, but as I printed the values, I realized the accelerometer values were the ones changing as I turned the module, so I decided to use those. The accelerometer measures the acceleration of the module as the name suggests while the gyroscope measures the rate of rotation, or angular velocity, of an object. Since the movement is relatively slow, the measured angular velocity might have been below the sensitivity threshold of the gyroscope, causing it to report small values which weren’t very helpful. The accelerometer was able to quantify the movement of the module to bigger numbers which would help more in this context. In the snippet of the serial monitor below, you can see the accelerometer x values are constantly changing as I am rotating the module, but the gyroscope hardly changes.
+<p>  I first added the LSM6DS3 + LIS3MDL module to my circuit, which includes a gyroscope, accelerometer, and magnetometer. Out of these 3 sensors, I had to determine which one of those would best be suited for the purpose of my wrist device. I originally thought the gyroscope would be the best to use, but as I printed the values, I realized the accelerometer values were the ones changing as I turned the module, so I decided to use those. The accelerometer measures the acceleration of the module as the name suggests while the gyroscope measures the rate of rotation, or angular velocity, of an object. Since the movement is relatively slow, the measured angular velocity might have been below the sensitivity threshold of the gyroscope, causing it to report small values which weren’t very helpful. The accelerometer was able to quantify the movement of the module to bigger numbers which would help more in this context. In the snippets of the serial monitor below, you can compare the outputs of the accelerometer and the gyroscope to see that the accelerometer values displayed more. 
 </p>
 ```c++
 			x	  y		  z
-		Accel -0.2596 	 0.0814 	 10.5583 	m/s^2 
-		Gyro 0.1552 	 -0.1723 	 0.1539 	radians/s 
-		Accel -1.3747 	 -0.4965 	 10.2437 	m/s^2 
-		Gyro 0.2871 	 -0.5070 	 -0.0916 	radians/s 
-		Accel -1.3340 	 -0.6281 	 10.0522 	m/s^2 
-		Gyro -0.0916 	 0.2138 	 -0.0391 	radians/s 
-		Accel -2.1739 	 -1.1139 	 9.6838 	m/s^2 
-		Gyro 0.0843 	 0.1063 	 -0.1637 	radians/s 
-		Accel -2.9946 	 -0.5874 	 9.6299 	m/s^2 
-		Gyro 0.1258 	 -0.0073 	 0.0195 	radians/s 
-		Accel -3.9769 	 0.0909 	 9.3248 	m/s^2 
-		Gyro 0.0733 	 0.2040 	 -0.0110 	radians/s 
-		Accel -4.5165 	 -0.0802 	 9.0365 	m/s^2 
-		Gyro 0.0489 	 -0.0965 	 0.0208 	radians/s 
-		Accel -5.1589 	 0.0096 	 8.6130 	m/s^2 
-		Gyro -0.0098 	 0.0892 	 -0.0147 	radians/s 
-		Accel -5.7607 	 0.0407 	 8.1775 	m/s^2 
+		Accel 0.1878 	 1.3196 	 10.1683 	m/s^2 
+		Accel 0.0108 	 0.9870 	 9.9805 	m/s^2 
+		Accel -0.2130 	 -0.2429 	 10.1061 	m/s^2 
+		Accel -1.3304 	 -0.0778 	 10.0223 	m/s^2 
+		Accel -2.5137 	 -0.1687 	 9.8644 	m/s^2 
+		Accel -2.8869 	 -0.1376 	 9.8309 	m/s^2 
+		Accel -3.6203 	 -0.0299 	 9.4397 	m/s^2 
+		Accel -4.7677 	 -0.0287 	 9.0078 	m/s^2 
+		Accel -3.9852 	 0.1101 	 9.2554 	m/s^2 
+		Accel 0.0359 	 0.0359 	 10.4136 	m/s^2 
+		Accel -1.7420 	 0.5073 	 10.2233 	m/s^2 
+
 ```
 
 <p>  I also added a piezo buzzer. Piezo buzzers work by applying an alternating voltage to a piezoelectric ceramic material, which causes the material to vibrate rapidly and produce sound waves. A piezo buzzer needs a resistor to reset the voltage when the switch is open, which is why I added a 100 ohm resistor to the circuit. 
