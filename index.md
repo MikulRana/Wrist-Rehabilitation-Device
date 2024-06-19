@@ -100,9 +100,9 @@ void loop() {
   delay(1000);
 
 }
-
+<!--
 ```
-```
+```-->
 <p>Below is what is displayed in the serial monitor in Arduino IDE from the above code. When the degree values become greater than or equal to 15, then the code displays "BAD", but later this will translate to a beep</p>
 ![Headstone Image](datasc.png)
 
