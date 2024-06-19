@@ -1,4 +1,6 @@
-![image](https://github.com/MikulRana/Wrist-Rehabilitation-Device/assets/76714516/cd457098-0e48-48d8-8ea6-8c1c15a3561e)# Wrist Rehabilitation Device
+<div style="text-align: center;">
+  <h1>Wrist Rehabilitation Device</h1>
+</div>
 My Wrist Rehabilitation Device uses sensors to monitor the angle of the wrist and beeps when the wrist bends too far. It uses an arduino, a gyroscope and accelerometer, and a flex sensor. It has a bluetooth module which allows it to transmit data to the user's computer without the arduino being plugged in. This could be used to prevent and help with carpal tunnel syndrome, or other wrist pains caused by bad posture. 
 
 
@@ -38,9 +40,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 </p>
 <p>  I also added a piezo buzzer. Piezo buzzers work by applying an alternating voltage to a piezoelectric ceramic material, which causes the material to vibrate rapidly and produce sound waves. A piezo buzzer needs a resistor to reset the voltage when the switch is open, which is why I added a 100 ohm resistor to the circuit. 
 </p>
-<div style="text-align: center;">
-  ![image](https://github.com/MikulRana/Wrist-Rehabilitation-Device/assets/76714516/e27b17bf-37bd-4bd0-be7c-71eac077888c)
-</div>
+
 <p>  The bluetooth module is called the HC-05, and I was using it to wirelessly transmit data from the arduino to my computer. 2 of the pins on the module, the RX and TX, are the serial communication pins. These have to be connected to the opposite pin on the arduino, so the RX has to go to the TX port and the TX has to go to the RX port. This is because the labels refer to the device itself, not the other device it's connected to.
 </p>
 <p>  One challenge I faced was with the bluetooth module where it wasn’t connecting to my computer and the arduino. I realized in my settings, I had to turn on advanced bluetooth search so that the HC-05 module showed up because the default mode only displays common devices like headphones, printers, etc. 
