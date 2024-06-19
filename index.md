@@ -4,10 +4,11 @@
 My Wrist Rehabilitation Device uses sensors to monitor the angle of the wrist and beeps when the wrist bends too far. It uses an arduino, a gyroscope and accelerometer, and a flex sensor. It has a bluetooth module which allows it to transmit data to the user's computer without the arduino being plugged in. This could be used to prevent and help with carpal tunnel syndrome, or other wrist pains caused by bad posture. 
 
 
-
-| **Engineer** | **School** | **Area of Interest** | **Grade** |
-|:--:|:--:|:--:|:--:|
-| Mikul R | Saratoga High School | Mechanical Engineering | Incoming Sophomore
+<div style="text-align: center;">
+  | **Engineer** | **School** | **Area of Interest** | **Grade** |
+  |:--:|:--:|:--:|:--:|
+  | Mikul R | Saratoga High School | Mechanical Engineering | Incoming Sophomore |
+</div>
 
 ![Headstone Image](headshot.jpg)
   
