@@ -53,6 +53,8 @@ For your final milestone, explain the outcome of your project. Key details to in
 </p>
 <p>The proto board allowed for the circuit to easily be transferred from the breadboard because each individual hole is connected by copper in the same pattern as a breadboard where each row is conductive.
 </p>
+<img width="299" alt="image" src="https://github.com/MikulRana/Wrist-Rehabilitation-Device/assets/76714516/625c56c2-07f4-4f4e-92d7-b51b73d4359c">
+
 <p>One challenge I faced was that as I sewed the proto board onto the sleeve, the leftover wire poked through it and make wearing the sleeve very uncomfortable. To fix this, I had to trim the excess wire and add some neoprene padding. 
 </p>
 <p>Another challenge I faced was at the end of the project when I thought I finished, the pins on my flex sensor broke off. To fix this, I had to attach pin headers to the flex sensor which was hard because the pin headers were hard to hold in place because of how small they are. Eventually I soldered the pins onto the sensor and onto the proto board and my flex sensor started working like normal.</p>
