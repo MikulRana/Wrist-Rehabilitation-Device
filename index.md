@@ -176,9 +176,133 @@ void loop() {
 ![image](https://github.com/MikulRana/Wrist-Rehabilitation-Device/assets/76714516/ece26785-a63a-4cec-962c-fd3eee20ec1a)
 
 
+<div style="text-align: center;">
+	<h1>Code</h1>
+</div>
 
-# Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
+```c++
+#include <Adafruit_LSM6DS3TRC.h>
+Adafruit_LSM6DS3TRC lsm6ds;
+#include <SoftwareSerial.h>
+SoftwareSerial Bluetooth(3, 4);
+#include <Adafruit_LIS3MDL.h>
+Adafruit_LIS3MDL lis3mdl;
+
+#include <Arduino.h>
+#include <Wire.h>
+
+const int FLEX_PIN = A0; // Pin connected to voltage divider output
+const int buzzer = 9; //buzzer to arduino pin 9
+const float VCC = 5; // Measured voltage of Ardunio 5V line
+const float R_DIV = 14000.0; // Measured resistance of resistor
+
+const float STRAIGHT_RESISTANCE = 30000.0; // resistance when straight
+const float BEND_RESISTANCE = 70000.0; // resistance at 90 deg
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  bool lsm6ds_success, lis3mdl_success;
+
+  // hardware I2C mode, can pass in address & alt Wire
+
+  lsm6ds_success = lsm6ds.begin_I2C();
+  lis3mdl_success = lis3mdl.begin_I2C();
+  Serial.print("Accelerometer range set to: ");
+  switch (lsm6ds.getAccelRange()) {
+  case LSM6DS_ACCEL_RANGE_2_G:
+    Serial.println("+-2G");
+    break;
+  case LSM6DS_ACCEL_RANGE_4_G:
+    Serial.println("+-4G");
+    break;
+  case LSM6DS_ACCEL_RANGE_8_G:
+    Serial.println("+-8G");
+    break;
+  case LSM6DS_ACCEL_RANGE_16_G:
+    Serial.println("+-16G");
+    break;
+  }
+
+  // lsm6ds.setAccelDataRate(LSM6DS_RATE_12_5_HZ);
+  Serial.print("Accelerometer data rate set to: ");
+  switch (lsm6ds.getAccelDataRate()) {
+  case LSM6DS_RATE_SHUTDOWN:
+    Serial.println("0 Hz");
+    break;
+  case LSM6DS_RATE_12_5_HZ:
+    Serial.println("12.5 Hz");
+    break;
+  case LSM6DS_RATE_26_HZ:
+    Serial.println("26 Hz");
+    break;
+  case LSM6DS_RATE_52_HZ:
+    Serial.println("52 Hz");
+    break;
+  case LSM6DS_RATE_104_HZ:
+    Serial.println("104 Hz");
+    break;
+  case LSM6DS_RATE_208_HZ:
+    Serial.println("208 Hz");
+    break;
+  case LSM6DS_RATE_416_HZ:
+    Serial.println("416 Hz");
+    break;
+  case LSM6DS_RATE_833_HZ:
+    Serial.println("833 Hz");
+    break;
+  case LSM6DS_RATE_1_66K_HZ:
+    Serial.println("1.66 KHz");
+    break;
+  case LSM6DS_RATE_3_33K_HZ:
+    Serial.println("3.33 KHz");
+    break;
+  case LSM6DS_RATE_6_66K_HZ:
+    Serial.println("6.66 KHz");
+    break;
+  }
+  pinMode(FLEX_PIN, INPUT);
+  pinMode(buzzer, OUTPUT); // Set buzzer - pin 9 as an output
+}
+
+void loop() {
+  sensors_event_t accel, gyro, mag, temp;
+  lsm6ds.getEvent(&accel, &gyro, &temp);
+  lis3mdl.getEvent(&mag);
+
+  int flexADC = analogRead(FLEX_PIN);
+  float flexV = flexADC * VCC / 1023.0;
+  float flexR = R_DIV * (VCC / flexV - 1.0);
+  float angle = map(flexR, STRAIGHT_RESISTANCE, BEND_RESISTANCE, 0, 90.0);
+
+  bool goodForm = (accel.acceleration.x <= 2.5) && ((angle < 15 ) && (angle > -5));
+  bool badFormUp = (accel.acceleration.x > 2.5) || (angle >= 15);
+  bool badFormDown = (angle <= -5);
+
+  Serial.print("Accelerometer X Value: ");
+  Serial.println(accel.acceleration.x, 4);
+  Serial.print("Bend: ");
+  Serial.print(angle);
+  Serial.println(" degrees");
+
+  if (goodForm) {
+    Serial.println("Good form");
+    noTone(buzzer);
+  } else {
+    Serial.println("Bad form");
+    if (badFormUp) {
+      Serial.println("Turn wrist up");
+    }
+    if (badFormDown) {
+      Serial.println("Turn wrist down");
+    }
+    tone(buzzer, 8000);
+  }
+
+  delay(1000);
+}
+
+```
 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
