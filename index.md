@@ -51,7 +51,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 </p>
 <p>The Hc-05 bluetooth module allows for serial bluetooth connection from the arduino to the computer which allows for the arduino to transmit data without being directly plugged into the computer. The bluetooth module has a RX and TX pin which connects to the other in the arduino. This is because because the labels are relative to the device itself. This means that one device's TX line transmits to the other device's RX line, and vice versa.
 </p>
-<p>The proto board allowed for the circuit to easily be transferred from the breadboard because each individual hole is connected by copper in the same pattern as a breadboard where each row is conductive.
+<p>The proto board allowed for the circuit to easily be transferred from the breadboard because each individual hole is connected by copper in the same pattern as a breadboard where each row is conductive. Below, the breadboard is on the left while the proto board is on the right.
 </p>
 <div style="text-align: center;">
 	<img width="400" alt="image" src="https://github.com/MikulRana/Wrist-Rehabilitation-Device/assets/76714516/625c56c2-07f4-4f4e-92d7-b51b73d4359c">
