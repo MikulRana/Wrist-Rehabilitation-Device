@@ -14,12 +14,13 @@ My Wrist Rehabilitation Device uses sensors to monitor the angle of the wrist an
 <div style="text-align: center;">
   <img src="headshot.jpg" alt="me!" width="600">
 </div>
-  
-<!--# Final Milestone
+<div style="text-align: center;">
+	<h1>Final Milestone</h1>
+</div>
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div style="text-align: center;">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/QK945fm57Vw?si=AxlBLNpQ3TZcoUxB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
@@ -27,7 +28,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 - A summary of key topics you learned about
 - What you hope to learn in the future after everything you've learned at BSE
 
--->
+
 <div style="text-align: center;">
   <h1>Second Milestone</h1>
 </div>
