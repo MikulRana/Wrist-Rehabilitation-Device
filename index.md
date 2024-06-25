@@ -47,6 +47,9 @@ For your final milestone, explain the outcome of your project. Key details to in
 </div>
 <p>My wrist sleeve uses a combination of its accelerometer and flex sensor values to determine whether a wrist position is in a bad position and whether to rotate it up or down to get to the correct position. 
 </p>
+<div style="text-align: center;">
+  <img src="unnamed (2).jpg" alt="Picture of Wrist Sleeve with all components" width="680">
+</div>
 <p>The piezo buzzer beeps as the 4.5” flex sensor or the accelerometer, which is part of a module which additionally includes a gyroscope and magnetometer are past certain values. I decided to only use the accelerometer out of these 3 because the gyroscope, which measures angular velocity, and the magnetometer, which measures magnetic fields acting similar to a compass, didn’t show variability in their values as I moved the module which meant they wouldn’t be very helpful. With the accelerometer which measures acceleration however, I was able to recognize a significant difference as I moved the module
 </p>
 <p>The Hc-05 bluetooth module allows for serial bluetooth connection from the arduino to the computer which allows for the arduino to transmit data without being directly plugged into the computer. The bluetooth module has a RX and TX pin which connects to the other in the arduino. This is because because the labels are relative to the device itself. This means that one device's TX line transmits to the other device's RX line, and vice versa.
