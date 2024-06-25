@@ -1,4 +1,4 @@
-	<div style="text-align: center;">
+<div style="text-align: center;">
   <h1>Wrist Rehabilitation Device</h1>
 </div>
 My Wrist Rehabilitation Device uses sensors to monitor the angle of the wrist and beeps when the wrist bends too far. It uses an arduino, a gyroscope and accelerometer, and a flex sensor. It has a Bluetooth module which allows it to transmit data to the user's computer without the arduino being plugged in. This could be used to prevent and help with carpal tunnel syndrome, or other wrist pains caused by bad posture. 
@@ -45,13 +45,13 @@ For your final milestone, explain the outcome of your project. Key details to in
 <div style="text-align: center;">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/uWUC-9JCDNA?si=ks31A9qE4YFSu6tZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-<div style="text-align: center;">
-  <h3>Milestone 2 Schematic</h3>
-</div>
-<div style="text-align: center;">
-  <img src="Milestone 2 Schematic.png" alt="Schematic" width="600">
-</div>
-
+<p>My wrist sleeve uses a combination of its accelerometer and flex sensor values to determine whether a wrist position is in a bad position and whether to rotate it up or down to get to the correct position. 
+</p>
+<p>The piezo buzzer beeps as the 4.5” flex sensor or the accelerometer, which is part of a module which additionally includes a gyroscope and magnetometer are past certain values. I decided to only use the accelerometer out of these 3 because the gyroscope, which measures angular velocity, and the magnetometer, which measures magnetic fields acting similar to a compass, didn’t show variability in their values as I moved the module which meant they wouldn’t be very helpful. With the accelerometer which measures acceleration however, I was able to recognize a significant difference as I moved the module
+</p>
+<p>The Hc-05 bluetooth module allows for serial bluetooth connection from the arduino to the computer which allows for the arduino to transmit data without being directly plugged into the computer. The bluetooth module has a RX and TX pin which connects to the other in the arduino. This is because because the labels are relative to the device itself. This means that one device's TX line transmits to the other device's RX line, and vice versa.
+</p>
+<p></p>
 <div style="text-align: center;">
   <h1>Second Milestone</h1>
 </div>
