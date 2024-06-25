@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+	<div style="text-align: center;">
   <h1>Wrist Rehabilitation Device</h1>
 </div>
 My Wrist Rehabilitation Device uses sensors to monitor the angle of the wrist and beeps when the wrist bends too far. It uses an arduino, a gyroscope and accelerometer, and a flex sensor. It has a Bluetooth module which allows it to transmit data to the user's computer without the arduino being plugged in. This could be used to prevent and help with carpal tunnel syndrome, or other wrist pains caused by bad posture. 
@@ -14,20 +14,43 @@ My Wrist Rehabilitation Device uses sensors to monitor the angle of the wrist an
 <div style="text-align: center;">
   <img src="headshot.jpg" alt="me!" width="600">
 </div>
+<!--
 <div style="text-align: center;">
 	<h1>Final Milestone</h1>
 </div>
-
+--
 <div style="text-align: center;">
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/QK945fm57Vw?si=AxlBLNpQ3TZcoUxB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-
+<div style="text-align: center;">
+  <h1>Second Milestone</h1>
+</div>
+--
+<div style="text-align: center;">
+  <h3>Milestone 2 Schematic</h3>
+</div>
+<div style="text-align: center;">
+  <img src="Milestone 2 Schematic.png" alt="Schematic" width="600">
+</div>
+--
 For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
 - What you hope to learn in the future after everything you've learned at BSE
-
+-->
+<div style="text-align: center;">
+  <h1>Third Milestone</h1>
+</div>
+<div style="text-align: center;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/uWUC-9JCDNA?si=ks31A9qE4YFSu6tZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div style="text-align: center;">
+  <h3>Milestone 2 Schematic</h3>
+</div>
+<div style="text-align: center;">
+  <img src="Milestone 2 Schematic.png" alt="Schematic" width="600">
+</div>
 
 <div style="text-align: center;">
   <h1>Second Milestone</h1>
