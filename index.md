@@ -51,7 +51,13 @@ For your final milestone, explain the outcome of your project. Key details to in
 </p>
 <p>The Hc-05 bluetooth module allows for serial bluetooth connection from the arduino to the computer which allows for the arduino to transmit data without being directly plugged into the computer. The bluetooth module has a RX and TX pin which connects to the other in the arduino. This is because because the labels are relative to the device itself. This means that one device's TX line transmits to the other device's RX line, and vice versa.
 </p>
-<p></p>
+<p>The proto board allowed for the circuit to easily be transferred from the breadboard because each individual hole is connected by copper in the same pattern as a breadboard where each row is conductive.
+</p>
+<p>One challenge I faced was that as I sewed the proto board onto the sleeve, the leftover wire poked through it and make wearing the sleeve very uncomfortable. To fix this, I had to trim the excess wire and add some neoprene padding. 
+</p>
+<p>Another challenge I faced was at the end of the project when I thought I finished, the pins on my flex sensor broke off. To fix this, I had to attach pin headers to the flex sensor which was hard because the pin headers were hard to hold in place because of how small they are. Eventually I soldered the pins onto the sensor and onto the proto board and my flex sensor started working like normal.</p>
+<p>Next I will add some modifications to my project, including a mechanism which would amplify weaker movements, allowing for easier wrist movement for people with wrist impairing disabilities. 
+</p>
 <div style="text-align: center;">
   <h1>Second Milestone</h1>
 </div>
