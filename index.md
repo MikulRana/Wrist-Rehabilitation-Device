@@ -177,7 +177,7 @@ void loop() {
 
 
 <div style="text-align: center;">
-	<h1>Code</h1>
+	<h1>Final Code</h1>
 </div>
 
 ```c++
@@ -313,6 +313,10 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Arduino Uno Rev3 | Microcontroller which everything connects to and contains all the code | $27.60 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | HC-05 Bluetooth Module | Wireless communication with the computer | $10.39 | <a href="https://www.amazon.com/HiLetgo-Wireless-Bluetooth-Transceiver-Arduino/dp/B071YJG8DR/"> Link </a> |
 | Adafruit LSM6DS3TR-C + LIS3MDL - Precision 9 DoF IMU | Gyroscope, Accelerometer, and Magnetometer | $19.95 | <a href="https://www.adafruit.com/product/5543?gad_source=1&gclid=Cj0KCQjw4MSzBhC8ARIsAPFOuyW3bKrwhMSo2VoSfvSt319uDnnbDld4MoYm0IzXAV2mbivYMjEGez4aApeGEALw_wcB"> Link </a> |
+| Flex Sensor (4.5") | Measures tilt of wrist in degrees | $17.95 | <a href="https://www.sparkfun.com/products/8606"> Link </a> |
+
+
+
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
