@@ -45,23 +45,26 @@ For your final milestone, explain the outcome of your project. Key details to in
 <div style="text-align: center;">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/QK945fm57Vw?si=wqGHxHWPPCXISbFB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-<p>My wrist sleeve uses a combination of its accelerometer and flex sensor values to determine whether a wrist position is in a bad position and whether to rotate it up or down to get to the correct position. 
+<p>My wrist sleeve uses a combination of its accelerometer and flex sensor values to determine whether a wrist is in a bad position and whether to rotate it up or down.
 </p>
 <div style="text-align: center;">
   <img src="unnamed (2).jpg" alt="Picture of Wrist Sleeve with all components" width="680">
 </div>
-<p>The piezo buzzer beeps as the 4.5” flex sensor or the accelerometer, which is part of a module which additionally includes a gyroscope and magnetometer are past certain values. I decided to only use the accelerometer out of these 3 because the gyroscope, which measures angular velocity, and the magnetometer, which measures magnetic fields acting similar to a compass, didn’t show variability in their values as I moved the module which meant they wouldn’t be very helpful. With the accelerometer which measures acceleration however, I was able to recognize a significant difference as I moved the module
+<p>The piezo buzzer beeps as the 4.5” flex sensor or the accelerometer, which is part of a module which additionally includes a gyroscope and magnetometer, are past certain values. I decided to only use the accelerometer out of these 3 because the gyroscope, which measures angular velocity, and the magnetometer, which measures magnetic fields acting similar to a compass, didn’t show variability in their values as I moved the module. This meant they wouldn’t be very helpful. With the accelerometer which measures acceleration however, I was able to recognize a significant difference in the values as I moved the module.
+
 </p>
-<p>The Hc-05 bluetooth module allows for serial bluetooth connection from the arduino to the computer which allows for the arduino to transmit data without being directly plugged into the computer. The bluetooth module has a RX and TX pin which connects to the other in the arduino. This is because because the labels are relative to the device itself. This means that one device's TX line transmits to the other device's RX line, and vice versa.
+<p>The Hc-05 bluetooth module allows for serial bluetooth connection from the arduino to the computer which allows for the arduino to transmit data without being directly plugged into the computer. The bluetooth module has a RX and TX pin which connects to the other in the arduino. This is because the labels are relative to the device itself. This means that one device's TX line transmits to the other device's RX line, and vice versa.
 </p>
-<p>The proto board allowed for the circuit to easily be transferred from the breadboard because each individual hole is connected by copper in the same pattern as a breadboard where each row is conductive. Below, the breadboard is on the left while the proto board is on the right.
+<p>The proto board allowed for the circuit to easily be transferred from the breadboard because each individual hole is connected by copper in the same pattern as a breadboard. I had to transfer everything to the proto board because the breadboard is big and wouldn’t fit well on a wrist device, while the proto board is much smaller and compact. Below, the breadboard is on the left while the proto board is on the right.
+
 </p>
 <div style="text-align: center;">
 	<img width="400" alt="image" src="https://github.com/MikulRana/Wrist-Rehabilitation-Device/assets/76714516/625c56c2-07f4-4f4e-92d7-b51b73d4359c">
 </div>
-<p>One challenge I faced was that as I sewed the proto board onto the sleeve, the leftover wire poked through it and make wearing the sleeve very uncomfortable. To fix this, I had to trim the excess wire and add some neoprene padding. 
+<p>One challenge I faced was that as I sewed the proto board onto the sleeve, the leftover wire poked through it and made wearing the sleeve very uncomfortable. To fix this, I had to trim the excess wire and add some neoprene padding.
 </p>
-<p>Another challenge I faced was at the end of the project when I thought I finished, the pins on my flex sensor broke off. To fix this, I had to attach pin headers to the flex sensor which was hard because the pin headers were hard to hold in place because of how small they are. Eventually I soldered the pins onto the sensor and onto the proto board and my flex sensor started working like normal.</p>
+<p>Another challenge I faced was at the end of the project when I thought I finished, the pins on my flex sensor broke off. After this, I had to attach pin headers to the flex sensor which was tough because the pin headers were hard to hold in place because of how small they are. Eventually I soldered the pins onto the sensor and onto the proto board and my flex sensor started working like normal.
+</p>
 <p>Next I will add some modifications to my project, including a mechanism which would amplify weaker movements, allowing for easier wrist movement for people with wrist impairing disabilities. 
 </p>
 <div style="text-align: center;">
