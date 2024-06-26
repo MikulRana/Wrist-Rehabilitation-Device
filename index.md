@@ -302,7 +302,7 @@ void loop() {
 
 ```
 <div style="text-align: center;">
-	# Bill of Materials
+	<h1>Bill of Materials</h1>
 </div>
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
