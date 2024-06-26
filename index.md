@@ -43,7 +43,7 @@ For your final milestone, explain the outcome of your project. Key details to in
   <h1>Third Milestone</h1>
 </div>
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/uWUC-9JCDNA?si=ks31A9qE4YFSu6tZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/QK945fm57Vw?si=wqGHxHWPPCXISbFB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 <p>My wrist sleeve uses a combination of its accelerometer and flex sensor values to determine whether a wrist position is in a bad position and whether to rotate it up or down to get to the correct position. 
 </p>
