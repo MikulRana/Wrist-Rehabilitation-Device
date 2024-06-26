@@ -301,9 +301,9 @@ void loop() {
 }
 
 ```
-
-# Bill of Materials
-
+<div style="text-align: center;">
+	# Bill of Materials
+</div>
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Arduino Uno Rev3 | Microcontroller which everything connects to and contains all the code | $27.60 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
