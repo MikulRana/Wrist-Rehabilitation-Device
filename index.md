@@ -3,7 +3,7 @@
 </div>
 My Wrist Rehabilitation Device uses sensors to monitor the angle of the wrist and beeps when the wrist bends too far. It uses an arduino, a gyroscope and accelerometer, and a flex sensor. It has a Bluetooth module which allows it to transmit data to the user's computer without the arduino being plugged in. This could be used to prevent and help with carpal tunnel syndrome, or other wrist pains caused by bad posture. 
 
-
+<p> </p>
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -324,10 +324,10 @@ void loop() {
 
 
 # Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
+Here are some of the websites I used as resources to help with connecting and using components.
+- [Using the Flex Sensor](https://lastminuteengineers.com/flex-sensor-arduino-tutorial/)
+- [Connecting Bluetooth Module to Computer](https://www.youtube.com/watch?v=fU0_pQ3flW4)
+- [Everything To Do With The Adafruit LSM6DS3TR-C + LIS3MDL - Precision 9 DoF IMU](https://learn.adafruit.com/adafruit-lsm6ds3tr-c-lis3mdl-precision-9-dof-imu/arduino)
 
 
 <div style="text-align: center;">
