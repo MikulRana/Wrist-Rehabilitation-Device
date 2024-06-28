@@ -65,7 +65,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 </p>
 <p>Another challenge I faced was at the end of the project when I thought I finished, the pins on my flex sensor broke off. After this, I had to attach pin headers to the flex sensor which was tough because the pin headers were hard to hold in place because of how small they are. Eventually I soldered the pins onto the sensor and onto the proto board and my flex sensor started working like normal.
 </p>
-<p>Next I will add some modifications to my project, including a mechanism which would amplify weaker movements, allowing for easier wrist movement for people with wrist impairing disabilities. 
+<p>Next I will add some modifications to my project, including a mechanism which would amplify weak finger movements, like a exoskeleton.
 </p>
 <div style="text-align: center;">
   <h1>Second Milestone</h1>
