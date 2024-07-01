@@ -59,7 +59,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 </p>
 <div style="text-align: center;">
-	<img width="400" alt="image" src="https://github.com/MikulRana/Wrist-Rehabilitation-Device/assets/76714516/625c56c2-07f4-4f4e-92d7-b51b73d4359c">
+	![image](https://github.com/MikulRana/Wrist-Rehabilitation-Device/assets/76714516/815e2835-aa05-4aa3-9602-459f25af907f)
 </div>
 <p>One challenge I faced was that as I sewed the proto board onto the sleeve, the leftover wire poked through it and made wearing the sleeve very uncomfortable. To fix this, I had to trim the excess wire and add some neoprene padding.
 </p>
