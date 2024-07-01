@@ -50,6 +50,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 <div style="text-align: center;">
   <img src="unnamed (2).jpg" alt="Picture of Wrist Sleeve with all components" width="680">
 </div>
+<h6>Figure 1</h6>
 <p>The piezo buzzer beeps as the 4.5” flex sensor or the accelerometer, which is part of a module which additionally includes a gyroscope and magnetometer, are past certain values. I decided to only use the accelerometer out of these 3 because the gyroscope, which measures angular velocity, and the magnetometer, which measures magnetic fields acting similar to a compass, didn’t show variability in their values as I moved the module. This meant they wouldn’t be very helpful. With the accelerometer which measures acceleration however, I was able to recognize a significant difference in the values as I moved the module.
 
 </p>
@@ -60,6 +61,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 </p>
 <div style="text-align: center;">
 	  <img src="Screenshot 2024-07-01 124248.png" alt="Schematic" width="600">
+	  <h6>Figure 2</h6>
 </div>
 <p>One challenge I faced was that as I sewed the proto board onto the sleeve, the leftover wire poked through it and made wearing the sleeve very uncomfortable. To fix this, I had to trim the excess wire and add some neoprene padding.
 </p>
@@ -78,6 +80,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 </div>
 <div style="text-align: center;">
   <img src="Milestone 2 Schematic.png" alt="Schematic" width="600">
+  <h6>Figure 3</h6>
 </div>
 <p>  I first added the LSM6DS3 + LIS3MDL module to my circuit, which includes a gyroscope, accelerometer, and magnetometer. Out of these 3 sensors, I had to determine which one of those would best be suited for the purpose of my wrist device. I originally thought the gyroscope would be the best to use, but as I printed the values, I realized the accelerometer values were the ones changing as I turned the module, so I decided to use those. The accelerometer measures the acceleration of the module as the name suggests while the gyroscope measures the rate of rotation, or angular velocity, of an object. Since the movement is relatively slow, the measured angular velocity might have been below the sensitivity threshold of the gyroscope, causing it to report small values which weren’t very helpful. The accelerometer was able to quantify the movement of the module to bigger numbers which would help more in this context. In the snippets of the serial monitor below, you can compare the outputs of the accelerometer and the gyroscope to see that the accelerometer values displayed more. 
 </p>
@@ -130,6 +133,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 </div>
 <p>  My first step forward was to work on the flex sensor portion of my schematic as well as coding the flex sensor to print out its values and figure out when the angle is a bad angle. The ideal wrist angle is 20 degrees or less, but since the flex sensor has some variability, I set the limit to 18 degrees. This was challenging because a flex sensor is actually a resistor, so the output of the sensor is a resistance value. Because of this, there had to be an algorithm which converts the resistance recorded to an angle.</p>
 ![Headstone Image](FlexSensorSchematic.png)
+<h6>Figure 4</h6>
 <p>  One challenge I faced was not seeing values in the output tab. Initially, I thought there was an issue with my code and referenced online sources, but my code appeared correct. I then realized I needed to open the Serial Monitor in Arduino IDE, as the output tab is for code outputs, while the Serial Monitor displays data transmitted from the Arduino.
 </p>
 <p>  Another problem was that the angle values read -35 degrees when the wrist was straight, instead of 0 degrees. I discovered the resistance value I defined for the resistor in my circuit was incorrect. After researching the resistor's possible resistance range and using a multimeter, I determined the exact value. I also used the color-coded bands on the resistor to confirm the precise resistance</p>
@@ -175,7 +179,7 @@ void loop() {
 </div>
 
 ![image](https://github.com/MikulRana/Wrist-Rehabilitation-Device/assets/76714516/ece26785-a63a-4cec-962c-fd3eee20ec1a)
-
+<h6>Stage 6</h6>
 
 <div style="text-align: center;">
 	<h1>Final Code</h1>
