@@ -173,13 +173,13 @@ void loop() {
 
 <p>Below is what is displayed in the serial monitor in Arduino IDE from the above code. When the degree values become greater than or equal to 15, then the code displays "BAD", but later this will translate to a beep</p>
 <img src="datasc.png" alt="data shown in the serial monitor" width="200">
-
+<h6>Figure 5</h6>
 <div style="text-align: center;">
 	<h1>Final Schematic</h1>
 </div>
 
 ![image](https://github.com/MikulRana/Wrist-Rehabilitation-Device/assets/76714516/ece26785-a63a-4cec-962c-fd3eee20ec1a)
-<h6>Stage 6</h6>
+<h6>Figure 6</h6>
 
 <div style="text-align: center;">
 	<h1>Final Code</h1>
