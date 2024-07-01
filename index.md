@@ -168,7 +168,7 @@ void loop() {
 
 
 <p>Below is what is displayed in the serial monitor in Arduino IDE from the above code. When the degree values become greater than or equal to 15, then the code displays "BAD", but later this will translate to a beep</p>
-<img src="datasc.png" alt="data shown in the serial monitor" width="600">
+<img src="datasc.png" alt="data shown in the serial monitor" width="200">
 
 <div style="text-align: center;">
 	<h1>Final Schematic</h1>
