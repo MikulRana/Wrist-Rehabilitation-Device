@@ -14,13 +14,13 @@ My Wrist Rehabilitation Device uses sensors to monitor the angle of the wrist an
 <div style="text-align: center;">
   <img src="headshot.jpg" alt="me!" width="600">
 </div>
-<!--
+
 <div style="text-align: center;">
 	<h1>Final Milestone</h1>
 </div>
---
+
 <div style="text-align: center;">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/QK945fm57Vw?si=AxlBLNpQ3TZcoUxB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/QK945fm57Vw?si=lWXBfn1LXfKNWpD7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 <div style="text-align: center;">
   <h1>Second Milestone</h1>
