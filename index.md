@@ -22,6 +22,21 @@ My Wrist Rehabilitation Device uses sensors to monitor the angle of the wrist an
 <div style="text-align: center;">
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/QK945fm57Vw?si=lWXBfn1LXfKNWpD7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+<p>
+My modification in my final milestone was to make a hand exoskeleton which amplifies finger movements. I chose to do this because it has a practical application in helping people who have difficulty moving their fingers or can’t move them at all. 
+</p>
+<p>
+The way my mechanism moves the finger is a micro server located on a 3d printed attachment has a string attached to it. The string runs through 3d printed finger segments, located under the fingers. As the servo rotates, the string gets pulled which pulls the 3d printed parts down along with it. 
+</p>
+<p>
+I used an additional arduino uno because only one arudino uno wouldn’t be able to output the required amount of power to power all 5 servos, so I connected the ground pins of each arduino to connect them.
+</p>
+<p>
+One challenge I had was that my 3d printed finger wasn't moving my finger when the string was pulled. I realised that the geometry of the 3d printed finger was much different than a normal finger, and the 3d printed finger used the points where the different segments touched as joints, but since they were spaced out on my finger, they couldn’t do that. To fix this, I moved the finger segments to the bottom of the finger, and it worked a little better, but the middle finger segment was blocking the top and bottom segment from moving. I experimented and removed the middle segment and it worked.
+</p>
+<p>
+As I continue this project, I will add on the other 4 fingers and improve my design as right now, the finger attachments might interfere with gripping things.
+</p>
 <div style="text-align: center;">
   <h1>Second Milestone</h1>
 </div>
